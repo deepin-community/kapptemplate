@@ -1,0 +1,426 @@
+kapptemplate (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 15:48:10 +0900
+
+kapptemplate (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Added myself to the uploaders.
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 27 Apr 2021 18:11:27 +0900
+
+kapptemplate (4:20.12.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * Refresh upstream metadata.
+  * New upstream release (20.12.0).
+  * Refresh copyright information.
+  * Bump Standards-Version to 4.5.1, no change required.
+  * Refresh upstream metadata.
+  * Removed George Kiagiadakis, Maximiliano Curia, Modestas Vainius from
+    the uploaders, thanks for your work on the package!
+  * Added myself to the uploaders.
+  * Add override for lintian tag no-manual-page, kapptemplate has no command
+    line arguments.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sat, 02 Jan 2021 11:49:38 +0100
+
+kapptemplate (4:20.08.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release (20.08.2).
+  * Update the build dependencies according to the upstream build system:
+    - bump Qt packages to 5.12.0
+    - bump KF packages to 5.66.0
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Tue, 27 Oct 2020 11:59:19 +0100
+
+kapptemplate (4:20.04.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Drop the Debian man page, as it is outdated, and it offers no useful
+    information.
+  * Explicitly add the gettext build dependency.
+  * Add the configuration for the CI on salsa.
+
+ -- Pino Toscano <pino@debian.org>  Mon, 03 Aug 2020 12:22:02 +0200
+
+kapptemplate (4:20.04.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release (20.04.2).
+  * Bump dh compatibility level to 13.
+  * Add Bug-* URLs to upstream metadata.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Mon, 15 Jun 2020 10:05:27 +0200
+
+kapptemplate (4:19.12.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * Switch debian/watch to new KDE release service URL.
+  * New upstream release (19.12.2).
+  * Update build dependencies according to upstream build system:
+    - cmake >= 3.0
+    - Qt >= 5.9
+    - KF5 libraries >= 5.53
+  * Drop kde-l10n migration rules after 2 stable releases.
+  * Switch from dhmk to dh --with kf5, bump compatibility level to 12.
+  * Borrow minimal upstream signing key from k3b.
+  * Refresh debian/copyright.
+  * Add hardening=+all build hardening flag.
+  * Bump Standards-Version to 4.5.0:
+    - Add Rules-Requires-Root: no.
+  * Update upstream project homepage URL.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sat, 08 Feb 2020 15:40:55 +0100
+
+kapptemplate (4:18.04.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update the patches:
+    - disable-akonaditemplates.diff: drop, fixed upstream
+  * Bump the debhelper compatibility to 11:
+    - bump the debhelper build dependency to 11~
+    - bump compat to 11
+  * Remove the autopkgtest stuff, since the test suite is run already during
+    the build.
+  * Bump Standards-Version to 4.1.4, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Mon, 23 Apr 2018 06:19:06 +0200
+
+kapptemplate (4:17.08.3-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Add patch to disable akonadi templates built,
+    you find the akonadi templates now in libkf5akonadi-dev.
+  * Use secure copyright format uri.
+  * Bump Standards-Version to 4.1.3 (no changes needed).
+  * update vcs links to salsa.
+  * cleanup unused paragraph from copyright.
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 05 Apr 2018 19:24:22 +0200
+
+kapptemplate (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+
+  [ Maximiliano Curia ]
+  * Bump kde-l10n breaks/replaces versions
+  * Update uploaders list as requested by MIA team (Closes: #879310)
+
+  [ Pino Toscano ]
+  * New upstream release.
+  * Adjust l10npkgs_firstversion_ok to the version where kde-l10n will
+    drop translations.
+  * Bump Standards-Version to 4.1.1, no changes required.
+  * Simplify watch file, and switch it to https.
+  * Stop removing qml-plasmoid.tar.bz2, since it is not provided in this
+    source anymore.
+  * Stop forcing debian/tmp as local installation directory, installing
+    everything to the final location
+    - drop kapptemplate.install, no more useful now
+  * Switch transitional kio-dev suggest to libkf5kio-dev.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 26 Nov 2017 12:48:15 +0100
+
+kapptemplate (4:17.08.1-1) experimental; urgency=medium
+
+  * New upstream release (17.08.1)
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Update build-deps and deps with the info from cmake
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 13 Sep 2017 15:44:05 +0200
+
+kapptemplate (4:17.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 05 Sep 2017 13:58:40 +0000
+
+kapptemplate (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:33:20 +0000
+
+kapptemplate (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:18:45 +0000
+
+kapptemplate (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:20:31 +0000
+
+kapptemplate (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:13:09 +0000
+
+kapptemplate (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:02:56 +0000
+
+kapptemplate (4:16.12.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Mar 2017 13:47:06 +0000
+
+kapptemplate (4:16.12.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Feb 2017 16:56:50 +0000
+
+kapptemplate (4:16.12.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 11 Jan 2017 13:15:48 +0000
+
+kapptemplate (4:16.12.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 14 Dec 2016 16:24:32 +0000
+
+kapptemplate (4:16.08.3-1) unstable; urgency=medium
+
+  * Add new patch: Add-missing-sort-name-to-the-reproducible-tar-call.patch
+  * New upstream release (16.08.3)
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 23 Nov 2016 20:55:25 +0100
+
+kapptemplate (4:16.08.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 21 Nov 2016 13:52:36 +0000
+
+kapptemplate (4:16.08.2-1) unstable; urgency=medium
+
+  [ Maximiliano Curia ]
+  * New upstream release (16.08.2)
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 17 Oct 2016 23:09:03 +0200
+
+kapptemplate (4:16.08.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 14 Oct 2016 13:38:52 +0000
+
+kapptemplate (4:16.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 16 Sep 2016 13:05:38 +0000
+
+kapptemplate (4:16.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 17 Aug 2016 11:47:42 +0000
+
+kapptemplate (4:16.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 12 Jul 2016 11:39:04 +0000
+
+kapptemplate (4:16.04.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 22 Jun 2016 16:21:48 +0200
+
+kapptemplate (4:16.04.0-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 31 May 2016 16:12:25 +0200
+
+kapptemplate (4:16.04.0-1) experimental; urgency=medium
+
+  [ Maximiliano Curia ]
+  * New upstream release (15.12.2).
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+
+  [ Automatic packaging ]
+  * Bump Standards-Version to 3.9.8
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 25 May 2016 11:51:11 +0200
+
+kapptemplate (4:15.12.1-1) experimental; urgency=medium
+
+  * New upstream release (15.12.0).
+  * New upstream release (15.12.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Feb 2016 10:24:12 +0100
+
+kapptemplate (4:15.08.3-1) unstable; urgency=medium
+
+  * New upstream release (15.08.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 02 Dec 2015 12:39:54 +0100
+
+kapptemplate (4:15.08.2-1) unstable; urgency=medium
+
+  * New upstream release (15.08.2).
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 16 Oct 2015 08:06:53 +0200
+
+kapptemplate (4:15.08.1-1) unstable; urgency=medium
+
+  * New upstream release (15.08.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 19 Sep 2015 02:44:59 +0200
+
+kapptemplate (4:15.08.0-1) unstable; urgency=medium
+
+  * New upstream release (15.08.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 08 Sep 2015 13:36:10 +0200
+
+kapptemplate (4:15.08.0-0ubuntu1) wily; urgency=medium
+
+  * new upstream release
+
+ -- Clive Johnston <clivejo@aol.com>  Wed, 26 Aug 2015 17:07:49 +0100
+
+kapptemplate (4:15.07.90-0ubuntu1) wily; urgency=medium
+
+  * New upstream release
+  * new upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 18 Aug 2015 09:33:29 +0100
+
+kapptemplate (4:15.04.2-0ubuntu1) wily; urgency=medium
+
+  [ Scarlett Clark ]
+  * New upstream release
+  * New upstream release
+  * Vivid backport
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 09 Jun 2015 18:37:02 +0200
+
+kapptemplate (4:14.12.3-1) experimental; urgency=medium
+
+  * New upstream release (14.12.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 29 Mar 2015 15:13:08 +0200
+
+kapptemplate (4:14.12.3-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 13 Mar 2015 14:00:41 -0700
+
+kapptemplate (4:14.12.2-1) experimental; urgency=medium
+
+  * Prepare Debian release.
+  * Update build dependencies to build against experimental and to
+    follow cmake.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 17 Feb 2015 11:46:02 +0100
+
+kapptemplate (4:14.12.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 10 Feb 2015 08:54:09 -0800
+
+kapptemplate (4:14.12.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 15 Dec 2014 16:22:00 +0100
+
+kapptemplate (4:14.11.97-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release candidate
+  * Fix watch urls for new release location.
+  * Update Vcs urls for the new repository location.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+  * Update the maintainer
+  * Refresh build-dependencies for the kf5 port
+  * kapptemplate suggests kio-dev instead of kdelibs5-dev
+  * Refresh kapptemplate.install
+  * Switch to v3 dhmk for kf5
+  * PPA build
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Fri, 28 Nov 2014 20:55:35 +0100
+
+kapptemplate (4:4.14.1-1) unstable; urgency=medium
+
+  * New upstream release (4.14.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 17 Sep 2014 09:44:27 +0200
+
+kapptemplate (4:4.14.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update install file.
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 20 Aug 2014 22:02:31 +0200
+
+kapptemplate (4:4.13.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 27 Jul 2014 11:17:24 +0200
+
+kapptemplate (4:4.12.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 28 Apr 2014 12:25:25 +0200
+
+kapptemplate (4:4.12.2-1) experimental; urgency=medium
+
+  * Bump Standards-Version to 3.9.5, no changes needed.
+  * New upstream release.
+  * Add autopkgtests.
+  * Bump kde-sc-dev-latest build dependency.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 10 Feb 2014 11:32:30 +0100
+
+kapptemplate (4:4.11.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update build dependencies.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 09 Nov 2013 14:25:51 +0100
+
+kapptemplate (4:4.11.2-1) experimental; urgency=low
+
+  * First release of kdesdk after being split by upstream.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 08 Oct 2013 10:58:40 +0200
